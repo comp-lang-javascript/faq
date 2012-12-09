@@ -1,0 +1,9 @@
+#tocTrigger {
+    display: none;
+}
+/* Use this to print one section per page */
+/*
+h2 {
+    page-break-before: always;
+}
+*/
