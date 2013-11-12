@@ -1,8 +1,3 @@
-/* 
-Updated 2009-06-14 Garrett Smith
-*/
-
-
 a {
     text-decoration: none;
     color: #002288;
@@ -198,4 +193,48 @@ dd {
   font-weight: bold;
   padding: 1em;
   margin: 1em 3em;
+}
+
+#logo-faq {
+    font-size: 60%;
+    background: rgb(21, 114, 183);
+	margin: 0;
+	padding: 0:
+}
+
+#logo h1 {
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body > h1 {
+	display: inline-block;
+}
+
+#logo p {
+	font-size: 12px;
+	white-space: nowrap;
+	margin-top: 18px;
+	margin-bottom: 0;
+	padding: 0;
+	color: rgb(21, 114, 183);
+	font-weight: 400;
+	font-family: sans-serif,Droid Sans Fallback;
+}
+
+#logo {
+	float: right;
+    margin: 0; 
+	padding: 0;
+    font-size: 100px;
+	background: #73b3de;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    height: 1.77em;
+    width: 1.77em;
+    text-align: center;
+    font-family: gotham ultra;
+	padding: 0;
+	border: .14em solid rgb(21, 114, 183);
 }
