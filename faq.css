@@ -1,3 +1,8 @@
+@font-face {
+      font-family: "Gotham Ultra";
+      src: url("gotham-ultra.ttf");
+}
+	
 a {
     text-decoration: none;
     color: #002288;
@@ -234,7 +239,7 @@ body > h1 {
     height: 1.77em;
     width: 1.77em;
     text-align: center;
-    font-family: gotham ultra;
+    font-family: Gotham Ultra;
 	padding: 0;
 	border: .14em solid rgb(21, 114, 183);
 }
