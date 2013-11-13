@@ -223,9 +223,10 @@ body > h1 {
 	margin-top: 18px;
 	margin-bottom: 0;
 	padding: 0;
-	color: rgb(21, 114, 183);
+	color: rgb(21, 90, 165);
 	font-weight: 400;
 	font-family: sans-serif,Droid Sans Fallback;
+	text-shadow: none;
 }
 
 #logo {
@@ -242,4 +243,5 @@ body > h1 {
     font-family: Gotham Ultra;
 	padding: 0;
 	border: .14em solid rgb(21, 114, 183);
+	text-shadow: 1px 1px 1px rgb(10, 17, 28);
 }
