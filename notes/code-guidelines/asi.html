@@ -93,8 +93,7 @@ var MyWidget = function(){
 </pre>
 <h3>ArrayLiteral or Property Accessor?</h3>
 <p>
-An <dfn>ArrayLiteral</dfn> can be interpreted as <dfn>property accessor</dfn> after the 
-removal of a <dfn>restricted production</dfn>. In this case, <dfn>Expression</dfn> <code>g--</code>.
+An <dfn>ArrayLiteral</dfn> can be interpreted in other cases as <dfn>property accessor</dfn>.
 </p>
 <pre>
 var g = 12
@@ -108,11 +107,12 @@ var g = 12
 <kbd>;</kbd>g--
 <kbd>;</kbd>[].slice.call([1,2,3])
 </pre>
-<p>This can be explained by the fact that when <kbd>g--[]</kbd> is parsed, 
+<p>When <kbd>g--[]</kbd> is parsed, 
 	a semicolon is automatically inserted before the <dfn>offending token</dfn> <kdb>[]</kbd>.
 </p>
 <p>
-When the postfix operator is removed, a <dfn>SyntaxError</dfn> results. Given the input:
+However, when the postfix operator is removed, the <kdb>[</kbd> is not an offending token, 
+	as it could be a property accessor, and so given the input:
 </p>
 <pre>
 var g = 12
