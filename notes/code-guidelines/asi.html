@@ -82,7 +82,7 @@
 
  <p>
      This can be explained by the fact that a program is scanned from left to right, 
-     repeatedly taking the longest possible sequence of characters as the next input element.
+     repeatedly taking the longest possible sequence of characters as the next input element. 
      Since a <dfn>CallExpression</dfn> is not a <dfn>restricted production</dfn>, the program 
      would be interpreted as:
  </p>
@@ -93,7 +93,7 @@ var MyWidget = function(){
 </pre>
 <h3>ArrayLiteral or Property Accessor?</h3>
 <p>
-An <dfn>ArrayLiteral</dfn> can be interpreted as property accessor after the 
+An <dfn>ArrayLiteral</dfn> can be interpreted as <dfn>property accessor</dfn> after the 
 removal of a <dfn>restricted production</dfn>. In this case, <dfn>Expression</dfn> <code>g--</code>.
 </p>
 <pre>
@@ -104,10 +104,13 @@ g--
 The program is interpreted as:
 </p>
 <pre>
-var g = 12<kbd>;</kbd>
-g--<kbd>;</kbd>
-[].slice.call([1,2,3])
+var g = 12
+<kbd>;</kbd>g--
+<kbd>;</kbd>[].slice.call([1,2,3])
 </pre>
+<p>This can be explained by the fact that when <kbd>g--[]</kbd> is parsed, 
+	a semicolon is automatically inserted before the <dfn>offending token</dfn> <kdb>[]</kbd>.
+</p>
 <p>
 When the postfix operator is removed, a <dfn>SyntaxError</dfn> results. Given the input:
 </p>
