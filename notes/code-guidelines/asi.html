@@ -30,16 +30,27 @@
     Article by Garrett Smith
 </p>
 <p>
-    This document is an addendum to <a href="./#asi"
-    >Code Guidelines for Rich Internet Application Development</a>. 
-   It has been created to dispel myths about <a href="http://ecma-international.org/ecma-262/5.1/#sec-7.9.1"
+    This document is an addendum to the <a href="./#asi"
+    >note on restricted productions of Automatic Semicolon Insertion</a> 
+(from Code Guidelines for Rich Internet Application Development). 
+   It has been created to dispel myths about <dfn title="Automatic Semicolon Insertion">ASI</dfn>, specifically 
+   regarding unrestricted productions</dfn> <a href="http://ecma-international.org/ecma-262/5.1/#sec-7.9.1"
 >&sect; 7.9.1 Rules of Automatic Semicolon Insertion</a> of ECMA-262 specification, 
   using examples and explanations.
+</p>
+	
+<h2>Restricted Productions</h2>
+<p>As covered on the <a href="./#asi"
+    >note on restricted productions of Automatic Semicolon Insertion</a>, restricted Productions are 
+    language constructs that forbid <code>LineTerminator</code> 
+	before the right-hand side of their production. These include only the postfix operators <code>++</code> and <code>--</code>, 
+	and the control statements <code>return</code>, <code>throw</code>, <code>continue</code>, and 
+   <code>break</code>. 
 </p>
 
 <h2>Unrestricted Productions</h2>
 <p>
-    Productions that are not <dfn>restricted</dfn> can be created accidentally where 
+    Productions that are <em>not</em> <dfn>restricted</dfn> can be created accidentally where 
     <abbr title="automatic semicolon insertion">ASI</abbr> has been used. This is often 
     the result of where the developer forgot to use a 
     semicolon. Regardless, the problems it creates can occur when the order of <dfn>Statements</dfn> 
@@ -111,8 +122,8 @@ var g = 12
 	a semicolon is automatically inserted before the <dfn>offending token</dfn> <kdb>[</kbd>.
 </p>
 <p>
-However, when the postfix operator is removed, the <kdb>[</kbd> is not an offending token, 
-	as it could be a property accessor, and so given the input:
+However, when the postfix operator is removed, <kdb>[</kbd> is not an offending token, 
+	as it could be a property accessor. Given the input:
 </p>
 <pre>
 var g = 12
