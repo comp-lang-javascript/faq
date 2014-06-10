@@ -1306,7 +1306,7 @@ Where supported, (IE8, Firefox 3, Opera 9, Safari 4), use
 </p> <p>
   
 Example: 
-<a href="http://jibbering.com/faq/example/postMessage.html">http://jibbering.com/faq/example/postMessage.html</a></p> <p>
+<a href="/example/postMessage.html">/example/postMessage.html</a></p> <p>
   
 Where <code>window.postMessage</code> is not supported, the <code>window.name</code> property 
 can be set on the other window, which can poll for updates to that 
@@ -1598,7 +1598,7 @@ such as <code>WScript.Sleep()</code> in the Windows Script Host.
 </p><ul class="linkList"><li><a href="http://msdn.microsoft.com/en-us/library/ms536753%28VS.85%29.aspx">http://msdn.microsoft.com/en-us/library/ms536753%28VS.85%29.aspx</a></li>
 <li><a href="http://docs.sun.com/source/816-6408-10/window.htm#1203758">http://docs.sun.com/source/816-6408-10/window.htm#1203758</a></li>
 <li><a href="http://en.wikipedia.org/wiki/Event-driven_programming">http://en.wikipedia.org/wiki/Event-driven_programming</a></li>
-<li><a href="http://www.jibbering.com/faq/faq_notes/misc.html#mtSetTI">faq_notes/misc.html#mtSetTI</a></li>
+<li><a href="/notes/misc.html#mtSetTI">faq_notes/misc.html#mtSetTI</a></li>
 </ul> </div>
 <div id="printSettings" class="section"><h3 id="FAQ4_23">10.9 How do I change print settings for window.print()?</h3><p>
   
@@ -1718,7 +1718,7 @@ These include quote marks, backslash, and line terminators.
 </p>
 <pre>var jsVar = "&lt;?php echo addcslashes($str,"\\\'\"\n\r"); ?&gt;";
 </pre>
-<ul class="linkList"><li><a href="http://www.jibbering.com/faq/example/addcslashes.php">example/addcslashes.php</a></li>
+<ul class="linkList"><li><a href="/example/addcslashes.php">example/addcslashes.php</a></li>
 <li><a href="http://php.net/manual/en/function.addcslashes.php">http://php.net/manual/en/function.addcslashes.php</a></li>
 <li><a href="http://commons.apache.org/lang/">http://commons.apache.org/lang/</a></li>
 </ul> </div>
@@ -1936,7 +1936,7 @@ function getEventTarget(e) {
   // First check for the existence of standard "target" property.
   return e.target || e.srcElement;
 }</pre>
-<ul class="linkList"><li><a href="http://www.jibbering.com/faq/notes/detect-browser/">notes/detect-browser/</a></li>
+<ul class="linkList"><li><a href="/notes/detect-browser/">notes/detect-browser/</a></li>
 <li><a href="http://dev.opera.com/articles/view/using-capability-detection/">http://dev.opera.com/articles/view/using-capability-detection/</a></li>
 <li><a href="http://developer.apple.com/internet/webcontent/objectdetection.html">http://developer.apple.com/internet/webcontent/objectdetection.html</a></li>
 <li><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43</a></li>
@@ -2042,24 +2042,13 @@ Instead, use
 <code>&lt;a href="something.html" onclick="somefunction();return false"&gt;</code>
 where <code>something.html</code> is a meaningful alternative. Alternatively,
 attach the <code>click</code> callback using an event registry.
-      </p><ul class="linkList"><li><a href="http://www.jibbering.com/faq/example/jsuri/">example/jsuri/</a></li>
+      </p><ul class="linkList"><li><a href="/example/jsuri/">example/jsuri/</a></li>
 <li><a href="http://groups.google.com/group/comp.lang.javascript/msg/f665cfca3b619692">Set/Navigate to a Location</a></li>
 <li><a href="http://www.useit.com/alertbox/20021223.html">Top Ten Web-Design Mistakes of 2002</a></li>
 </ul> </div>
 <div id="comments" class="section"><h2 id="FAQ5">14 Comments and Suggestions</h2>
-<p>
-  
-The FAQ uses the stylesheet <a href="http://www.jibbering.com/faq/faq.css">faq.css</a> and is generated
-from the xml source <a href="http://www.jibbering.com/faq/index.xml">index.xml</a> by the windows script
-host script <a href="http://www.jibbering.com/faq/process.wsf">process.wsf</a> which also checks the links.
-   </p> </div><div id="FAQENTRY" class="section"><h3 id="FAQ5_1">14.1 Why do some posts have &lt;FAQENTRY&gt; in them?</h3><p>
-  
-If a poster feels that the question they are answering should be
-covered in the FAQ, placing &lt;FAQENTRY&gt; in the post lets the FAQ
-robot collect the messages for easy review and inclusion. A Draft Proposal
-for the FAQ is requested and appreciated.
-    </p> <p>
-  
+
+<p>  
 The &lt;FAQENTRY&gt; should not be used in posts except in
 conjunction with a suggestion/proposal for the FAQ. It should
 also not be literally quoted in replies, instead it should be
@@ -2076,5 +2065,4 @@ welcome.
 <!--<script src='FAQReader.js' type='text/javascript'></script>--> 
  
 
->>>>>>> 7a323f7e195dea8ce7ed5abe23455d993c04ae21
 </body></html>
