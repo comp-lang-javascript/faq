@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+<title>DHTML Kitchen Domain</title>
+</head>
+<body>
+
+<h1>Send a message to <code>http://dhtmlkitchen.com/</code></h1>
+
+<pre id="m">(no message yet)</pre>
+
+<script type="text/javascript">
+self.onload = function() {
+  addCallabck("message", messageReceivedHandler);
+
+  function messageReceivedHandler(ev) {
+    ev = ev || self.event;
+    var ACCEPT_DOMAIN = "http://jibbering.com/",
+        origin = ev.origin,
+        messageEl = document.getElementById("m");
+  
+    if(origin !== ACCEPT_DOMAIN) return;
+ 
+    messageEl.textContent = origin + " said: " + ev.data;
+  }
+
+
+  hasEventTarget = "addEventListener"in self;
+  function addCallback(o, type, cb) {
+    if (hasEventTarget) {
+      o.addEventListener(type, cb, false);
+    } else {
+      o.attachEvent("on" + type, cb);
+    }
+    return bound||cb;
+  }
+};
+</script>
+
+</body>
+</html>
