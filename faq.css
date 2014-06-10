@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 /* 
 Updated 2009-06-14 Garrett Smith
 */
 
 
+=======
+@font-face {
+      font-family: "Gotham Ultra";
+      src: url("gotham-ultra.ttf");
+}
+	
+>>>>>>> 7a323f7e195dea8ce7ed5abe23455d993c04ae21
 a {
     text-decoration: none;
     color: #002288;
@@ -199,3 +207,59 @@ dd {
   padding: 1em;
   margin: 1em 3em;
 }
+<<<<<<< HEAD
+=======
+
+#logo-faq {
+    font-size: 60%;
+    background: rgb(21, 114, 183);
+	margin: 0;
+	padding: 0:
+}
+
+#logo h1 {
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body > h1 {
+	display: inline-block;
+}
+
+#logo p {
+	font-size: 12px;
+	white-space: nowrap;
+	margin-top: 18px;
+	margin-bottom: 0;
+	padding: 0;
+	color: rgb(21, 90, 165);
+	font-weight: 400;
+	font-family: sans-serif,Droid Sans Fallback;
+	text-shadow: none;
+}
+
+#logo {
+	float: right;
+    margin: 0; 
+	padding: 0;
+    font-size: 100px;
+	background: #73b3de;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    height: 1.77em;
+    width: 1.77em;
+    text-align: center;
+    font-family: Gotham Ultra;
+	padding: 0;
+	border: .14em solid rgb(21, 114, 183);
+	text-shadow: 1px 1px 1px rgb(10, 17, 28);
+}
+
+#social {
+	color: rgb(21, 90, 165);
+	border: .14em solid rgb(21, 114, 183);
+	background: #73b3de;
+	float: right;
+}
+>>>>>>> 7a323f7e195dea8ce7ed5abe23455d993c04ae21
